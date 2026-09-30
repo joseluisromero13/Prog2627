@@ -20,8 +20,8 @@ print("Altura: " + str(cadena) + " Tipo: " + str(type(cadena)))
 """
 
 print(f"Nombre: {nombre} (Tipo: {type(nombre)})")
-print(f"Edad: {edad} (Tipo: {str(type(edad))})")
-print(f"Nombre: {cadena} (Tipo: {str(type(cadena))})")
+print(f"Edad: {edad} años (Tipo: {str(type(edad))})")
+print(f"Nombre: {cadena} m (Tipo: {str(type(cadena))})")
 
 
 
