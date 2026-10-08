@@ -16,7 +16,7 @@ public class Ejercicio24 {
         boolean usuarioBiblioteca = sc.nextBoolean();
         
         //Hacemos la comparación de las respuestas de cada entrada
-        boolean salir = !(usuarioLlueve) && usuarioTarea && usuarioBiblioteca;
+        boolean salir = !(usuarioLlueve) && usuarioTarea || usuarioBiblioteca;
         
         //Mostramos el resultado por pantalla
         System.out.println("El usuario podrá salir: " + salir);
