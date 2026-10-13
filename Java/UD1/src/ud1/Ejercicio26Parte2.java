@@ -17,7 +17,6 @@ public class Ejercicio26Parte2 {
         int edadCliente = entrada.nextInt();
 
         double precio = edadCliente < 12 ? 5 : 8;
-        double precioDos = edadCliente >= 12 || edadCliente <= 65 ? 8 :;
         System.out.println("El cliente debe pagar: " + precio + " Euros.");
     }
 }
