@@ -17,24 +17,23 @@ public class EjercicicioAmpliacion1 {
         Scanner entrada = new Scanner(System.in);
 
         int contador = 1;
-        int intento = 3;
-
-        while (contador <= 3 && intento >= 1) {
-            contador++;
-            intento--;
+        final int PIN = 2580;
+        
+        while (contador <= 3 && PIN != 2580) {
+           
+            
             System.out.println("Escribe el pin");
-            int pin = entrada.nextInt();
+            int numero = entrada.nextInt();
 
-            if (pin == 2580) {
+            if (numero == PIN) {
                 System.out.println("El pin es correcto");
-                break;
+                System.out.println("Has necesitado " + contador + " intentos.");
             } else {
-
-                System.out.println("Error fallaste el pin, te quedan " + intento + " intentos.");
-                
+                System.out.println("Error fallaste el pin, te quedan " + (3 - contador) + " intentos.");
             }
+            
+            contador++;
 
         }
-
     }
 }
