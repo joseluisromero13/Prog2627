@@ -32,10 +32,6 @@ public class Ejercicio16 {
                 System.out.println("No introduciste una opción correcta");
             }
             
-            
-
-            
-
         }
     }
 }
