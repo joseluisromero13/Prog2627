@@ -13,18 +13,21 @@ import java.util.Scanner;
 public class Ejercicio19 {
     public static void main(String[] args) {
         int suma = 0;
+        int numero;
         Scanner entrada = new Scanner(System.in);
-        while (true) {
+        
+        do {
             System.out.println("Escribe el numero que quieras sumar:");
-            int numero = entrada.nextInt();
-            suma = suma + numero;
+            numero = entrada.nextInt();
+            
+            
             if (numero == 0) {
                 System.out.println(suma);
-                break;
             } else {
+                suma = suma + numero;
                 System.out.println(suma);
-
             }
-        }        
+            }while (numero != 0);
+              
     }
 }

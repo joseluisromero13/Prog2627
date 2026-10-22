@@ -17,15 +17,15 @@ public class EjercicicioAmpliacion1 {
         Scanner entrada = new Scanner(System.in);
 
         int contador = 1;
-        final int PIN = 2580;
+        int numero;
+       
         
-        while (contador <= 3 && PIN != 2580) {
-           
-            
+        
+        do {
             System.out.println("Escribe el pin");
-            int numero = entrada.nextInt();
-
-            if (numero == PIN) {
+            numero = entrada.nextInt();
+            
+            if (numero == 2580) {
                 System.out.println("El pin es correcto");
                 System.out.println("Has necesitado " + contador + " intentos.");
             } else {
@@ -34,6 +34,6 @@ public class EjercicicioAmpliacion1 {
             
             contador++;
 
-        }
+        } while (contador <= 3 && numero != 2580);
     }
 }
