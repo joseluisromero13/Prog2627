@@ -14,10 +14,16 @@ public class Ejercicio26 {
         System.out.println("Escribe un numero.");
         int numero = entrada.nextInt();
         
-        if (numero % numero ==0){
+        if (numero % numero == 0){
             System.out.println("El numero es primo.");
         } else {
             System.out.println("El número no es primo");
         }
     }
 }
+
+
+
+
+
+
