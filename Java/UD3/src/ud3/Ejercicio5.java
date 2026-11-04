@@ -25,10 +25,10 @@ public class Ejercicio5 {
         int opcion = entrada.nextInt();
         
         System.out.println("Escribe el primer numero");
-        int a = entrada.nextInt();
+        double a = entrada.nextDouble();
         
         System.out.println("Escribe el segundo numero");
-        int b = entrada.nextInt();
+        double b = entrada.nextDouble();
         
         switch (opcion) {
             case 1:
@@ -42,27 +42,36 @@ public class Ejercicio5 {
                 System.out.println("El resultado es " + multiplicar(a, b));
                 break;
             case 4:
+                if (b == 0){
+                    System.out.println("No se puede dividir, el dividendo es 0");
+                }else{
                 System.out.println("El resultado es " + dividir(a, b));
                 break;
+                }
             default:
                 System.out.println("Error opcion invalida.");
                 break;
         }
     }
-
-    public static int suma(int a, int b) {
+   
+    
+    
+    public static double suma(double a, double b) {
         return a + b;
     }
 
-    public static int resta(int a, int b) {
+    public static double resta(double a, double b) {
         return a - b;
     }
 
-    public static int multiplicar(int a, int b) {
+    public static double multiplicar(double a, double b) {
         return a * b;
     }
+    
+    
 
-    public static int dividir(int a, int b) {
+    public static double dividir(double a, double b) {
             return a / b;
     }
 }
+
