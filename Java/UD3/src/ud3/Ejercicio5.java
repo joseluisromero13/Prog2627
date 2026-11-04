@@ -1,3 +1,4 @@
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -10,6 +11,7 @@ import java.util.Scanner;
  *
  * @author 04_1DAW
  */
+
 public class Ejercicio5 {
 
     public static void main(String[] args) {
@@ -22,25 +24,25 @@ public class Ejercicio5 {
         System.out.println("----- 4. DIVIDIR -----");
         int opcion = entrada.nextInt();
         
-        System.out.println("Escribe un numero");
+        System.out.println("Escribe el primer numero");
         int a = entrada.nextInt();
         
-        System.out.println("Escribe un numero");
+        System.out.println("Escribe el segundo numero");
         int b = entrada.nextInt();
         
         switch (opcion) {
             case 1:
               
-                System.out.println(suma(a, b));
+                System.out.println("El resultado es " + suma(a, b));
                 break;
             case 2:
-                 System.out.println(resta(a, b));
+                System.out.println("El resultado es " + resta(a, b));
                 break;
             case 3:
-                 System.out.println(multiplicar(a, b));
+                System.out.println("El resultado es " + multiplicar(a, b));
                 break;
             case 4:
-                System.out.println(dividir(a, b));
+                System.out.println("El resultado es " + dividir(a, b));
                 break;
             default:
                 System.out.println("Error opcion invalida.");
@@ -63,5 +65,4 @@ public class Ejercicio5 {
     public static int dividir(int a, int b) {
             return a / b;
     }
-
 }
