@@ -39,8 +39,33 @@ public class Ejercicio4 {
                 System.out.println("El resultado es " + resta(a, b));
                 break;
             case 3:
-                System.out.println("El resultado es " + multiplicar(a, b));
+                System.out.println("Elige un tipo de multiplicación");
+                System.out.println("-----Elige una opción-----");
+                System.out.println("----- 1. MULTIPLICAR CON DOS OPERADORES-----");
+                System.out.println("----- 2. MULTIPLICAR CON 3 OPERADORES-----");
+                System.out.println("----- 3. MULTIPLICAR CON DOS OPERADORES ENTEROS-----");
+                int opcionMultiplicar = entrada.nextInt();
+            /*Menu para las multiplicaciones*/    
+                switch (opcionMultiplicar){
+                    case 1:
+                        System.out.println("El resultado es " + multiplicar(a, b));
+                        
+                        break;
+                    case 2:
+                        System.out.println("Escribe el tercer valor");
+                        int c = entrada.nextInt();
+                        System.out.println("El resultado es " + multiplicar((int)a, (int)b, (int)c));
+                        break;
+                        
+                    case 3:
+                        System.out.println("El resultado es " + multiplicar((int)a, (int)b));
+                        break;
+                    default:
+                        System.out.println("Error opcion invalida de multiplicar.");
+                        break;
+                }
                 break;
+                
             case 4:
                 if (b == 0){
                     System.out.println("No se puede dividir, el dividendo es 0");
@@ -67,7 +92,15 @@ public class Ejercicio4 {
     public static double multiplicar(double a, double b) {
         return a * b;
     }
-
+    
+    public static int multiplicar(int a, int b) {
+        return a * b;
+    }
+    
+    public static int multiplicar(int a, int b, int c) {
+        return multiplicar(a, b) * c;
+    }
+    
     public static double dividir(double a, double b) {
             return a / b;
     }
