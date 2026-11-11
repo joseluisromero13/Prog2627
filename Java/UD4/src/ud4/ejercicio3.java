@@ -22,14 +22,14 @@ public class ejercicio3 {
         System.out.println("Escribe el precio que deseas cambiar del 1-5");    
         int indice = entrada.nextInt();
         
-        for(int i = 0; i <= precios.length + 1; i++){
-            System.out.println("Escribe el precio que deseas cambiar del 1-5");    
-            int numero = entrada.nextInt();
-            precios[i] = numero;
-        }
+        System.out.println("Escribe el nuevo precio"); 
+        int numero = entrada.nextInt();
+        precios[(indice -1)] = numero;
+    
         
         for(int i = 0; i < precios.length; i++){
-            System.out.println("La temperatura es: " + precios[i]);    
+         System.out.println("El precio es: " + precios[i]);    
         }
+        
     }
 }
