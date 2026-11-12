@@ -24,10 +24,10 @@ public class ejercicio3 {
         
         System.out.println("Escribe el nuevo precio"); 
         int numero = entrada.nextInt();
-        precios[(indice -1)] = numero;
+        precios[indice -1] = numero;
     
         
-        for(int i = 0; i < precios.length; i++){
+        for(int i = 0; i <= precios.length; i++){
          System.out.println("El precio es: " + precios[i]);    
         }
         

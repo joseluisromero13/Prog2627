@@ -13,14 +13,16 @@ public class ejercicio1 {
     public static void main(String[] args) {
 
         int[] numeros = {1, 2, 3, 4, 5};
-        for (int i = 0 ; i < numeros.length ; i++) {
-        System.out.println(numeros[i]);
-    }
+        imprimeArray(numeros);
+
         
         numeros[2] = 6;
+        imprimeArray(numeros);
         
-        for (int i = 0 ; i < numeros.length ; i++) {
-        System.out.println(numeros[i]);
+    }
+    public static void imprimeArray(int[] array){
+        for (int i = 0 ; i < array.length ; i++) {
+        System.out.println(array[i]);
         }
     }
 }
