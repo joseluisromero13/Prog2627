@@ -17,9 +17,29 @@ public class Ejercicio33 {
         String frase = entrada.nextLine();
         String minuscula = frase.toLowerCase();
         
-        for (int i = 0; i < minuscula.length(); i++){
-            char c = 
-        }
+        int letras = 0;
+        int numeros = 0;
+        int espacios = 0;
+        int otros = 0;
         
+        
+        for (int i = 0; i < minuscula.length(); i++){
+            char c = minuscula.charAt(i);
+            
+            if (Character.isLetter(c)){
+                letras++;  
+            } else if(Character.isDigit(c)){
+                numeros++;
+            } else if(Character.isWhitespace(c)){
+                espacios++;
+            } else{
+                otros++;
+            }
+            
+        }
+        System.out.println("Letras: " + letras);
+        System.out.println("Numeros: " + numeros);
+        System.out.println("Espacios: " + espacios);
+        System.out.println("Otros: " + otros); 
     }
 }

@@ -13,16 +13,19 @@ public class ejercicio6 {
         int[] numeros = {12, 5, 8, 20, 3, 15};
         
         for (int i = 0; i < numeros.length; i++){
-                System.out.println(mayor(numero(s)));
+             if (numeros[i] > 10){
+                System.out.println(numeros[i]);
+             }
         }
+                   
+        System.out.println("-------------");
+
         
         for (int numero : numeros){
-            
-        }
-    }
-    public static void mayor(int numero){
-        if (numero >= 10){
+            if (numero > 10){
             System.out.println(numero);
+             }
         }
     }
+    
 }
