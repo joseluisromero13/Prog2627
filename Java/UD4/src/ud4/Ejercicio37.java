@@ -12,10 +12,10 @@ import java.util.Scanner;
 public class Ejercicio37 {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-
+        String frase;
         do {
             System.out.println("Escribe un Codigo:");
-            String frase = entrada.nextLine();
+            frase = entrada.nextLine();
             System.out.println("Codigo: " + frase);
             System.out.println("Resultado: " + frase.matches("[A-Z]{2}\\d{4}"));
 
